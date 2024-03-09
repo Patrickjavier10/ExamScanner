@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="184dp"
+        android:layout_height="74dp"
+        android:text="Checkmate"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@color/gray_400" />
+
+    <ImageView
+        android:id="@+id/penLogo"
+        android:layout_width="106dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.894"
+        app:srcCompat="@drawable/pen_exam" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/personicon" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347"
+        app:srcCompat="@drawable/stilogo1" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="81dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/prefinal_symbol" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

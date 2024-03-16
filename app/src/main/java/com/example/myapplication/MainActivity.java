@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         edUsername = findViewById(R.id.editTextText);
         edPassword = findViewById(R.id.editTextText2);
         btn = findViewById(R.id.button);
@@ -54,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
                     }
 
-
                 }
             }
 
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,RegisterActivity.class));
             }
         });
+
 
     }
 }

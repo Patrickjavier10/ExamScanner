@@ -1,31 +1,76 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
+     CardView iv;
+     CardView bv;
 
-    ImageView iv;
+     CardView bn;
+
+    CardView cn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-       iv = findViewById(R.id.penLogo);
 
-        iv.setOnClickListener(new View.OnClickListener(){
+        iv = findViewById(R.id.figure1);
+        bv = findViewById(R.id.figure6);
+        bn = findViewById(R.id.figure4);
+        cn = findViewById(R.id.figure3);
+
+        iv.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, pen.class));
             }
         });
+
+        bv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, AboutPage.class));
+            }
+        });
+
+        //ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.Write_External_Storage, Manifest.permission.Read_External_Storage}, PackageManager.PERMISSION_GRANTED);
+
+         // final String WRITE_EXTERNAL_STORAGE = ("android.permission.WRITE_EXTERNAL_STORAGE");
+
+        bn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, SettingsActivity.class));
+            }
+        });
+
+
+        cn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(HomeActivity.this, ExamsActivity.class));
             }
 
+    });
+
+}
     }
+
+
+
+
+

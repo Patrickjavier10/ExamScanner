@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,53 +9,85 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="392dp"
-        android:layout_height="136dp"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:padding="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/stilogo1" />
+        app:srcCompat="@drawable/stilogo1"
+        />
 
-    <ImageView
-        android:id="@+id/scanner"
-        android:layout_width="113dp"
-        android:layout_height="99dp"
 
-        android:backgroundTint="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.862"
-        app:srcCompat="@drawable/scan_icon_15" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:fontFamily="casual"
+        android:text="CheckMate"
+        android:textAlignment="center"
+        android:textColor="#000080"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:flow_horizontalAlign="center"
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="420dp"
-        android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@color/gray_400" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
 
 
-    <TextView
-        android:id="@+id/addClass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add a Class"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/scanner"
+    <Button
+        android:id="@+id/AddClass"
+        android:layout_width="122dp"
+        android:layout_height="47dp"
+        android:backgroundTint="@color/gray_400"
+        android:elevation="20dp"
+        android:fontFamily="casual"
+        android:padding="2dp"
+        android:text="Add Class"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.055"/>
+        app:layout_constraintVertical_bias="0.905" />
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="413dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="200dp"
+        android:divider="@color/black"
+        android:dividerHeight=".05sp"
+        android:elevation="2dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/AddClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/gray_600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddClass"
+        app:layout_constraintVertical_bias="1.0"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".pen">
 
+
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="100dp"
@@ -59,35 +61,47 @@
         app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.905" />
+        app:layout_constraintVertical_bias="0.876" />
 
-    <ListView
-        android:id="@+id/list_item"
-        android:layout_width="413dp"
-        android:layout_height="485dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="200dp"
-        android:divider="@color/black"
-        android:dividerHeight=".05sp"
-        android:elevation="2dp"
-        android:padding="20dp"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="414dp"
+        android:layout_height="503dp"
         app:layout_constraintBottom_toTopOf="@+id/AddClass"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        >
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:background="@color/gray_600"
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:clickable="true" />
+
+    </ScrollView>
+    
+
+    <FrameLayout
+        android:layout_width="420dp"
+        android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AddClass"
-        app:layout_constraintVertical_bias="1.0"
-        />
+        app:layout_constraintTop_toTopOf="@+id/bottomNavigationView" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="415dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

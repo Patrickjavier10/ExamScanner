@@ -3,7 +3,7 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
-    android:id="@+id/menu"
+    android:id="@+id/Home"
     android:title="Home"
     android:icon="@drawable/baseline_home_24"/>
 
@@ -11,6 +11,7 @@
         android:id="@+id/scans"
         android:title="Scan"
         android:icon="@drawable/baseline_add_24"
+
         />
 
     <item

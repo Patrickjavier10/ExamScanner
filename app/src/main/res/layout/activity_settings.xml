@@ -104,15 +104,15 @@
         android:id="@+id/row3"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:orientation="horizontal"
         android:layout_marginTop="350dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.027">
+        app:layout_constraintVertical_bias="0.646">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/figure3"
@@ -133,26 +133,28 @@
                 android:textSize="20sp" />
 
 
-
-
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <FrameLayout
         android:layout_width="420dp"
-        android:layout_height="45dp"
-        android:background="@color/gray_600"
-        android:elevation="@dimen/cardview_default_radius"
-        android:padding="@dimen/fab_margin"
+        android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomNavigationView" />
 
-        app:layout_constraintTop_toBottomOf="@+id/row3"
-        app:layout_constraintVertical_bias="1.0" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="415dp"
+        android:layout_height="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

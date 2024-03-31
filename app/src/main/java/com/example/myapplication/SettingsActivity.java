@@ -2,15 +2,19 @@ package com.example.myapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class SettingsActivity extends AppCompatActivity {
+
+    CardView cd;
 
     private BottomNavigationView bottomNavigationView;
 
@@ -19,8 +23,9 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-
+        cd = findViewById(R.id.figure3);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
 
 
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -40,6 +45,15 @@ public class SettingsActivity extends AppCompatActivity {
                 return false;
             }
 
+        });
+
+
+        cd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+                finish();
+            }
         });
 
 

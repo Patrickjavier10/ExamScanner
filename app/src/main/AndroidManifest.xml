@@ -16,6 +16,12 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Part2"
+            android:exported="false" />
+        <activity
+            android:name=".AnswerKeyActivity"
+            android:exported="false" />
+        <activity
             android:name=".Class1"
             android:exported="false"
             android:label="@string/title_activity_class1"

@@ -113,7 +113,7 @@ public class pen extends AppCompatActivity {
         //}
 
 
-        //This is  a code to that adds functionality to the bottom navigatio view.
+        //This is  a code to that adds functionality to the bottom navigation view.
 
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -135,7 +135,7 @@ public class pen extends AppCompatActivity {
         });
 
 
-
+        //Logout button to log in module
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -328,6 +328,7 @@ public class pen extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View view = getLayoutInflater().inflate(R.layout.layout_dialog, null);
         EditText name = view.findViewById(R.id.btnClass);
+        EditText yearlvl = view.findViewById(R.id.yrlvl);
 
         builder.setView(view)
                 .setTitle("Add Class Name")
@@ -342,7 +343,9 @@ public class pen extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        addcard(name.getText().toString());
+                        addcard(name.getText().toString(), yearlvl.getText().toString());
+
+
 
 
                     }
@@ -354,12 +357,14 @@ public class pen extends AppCompatActivity {
 
 
 
-    private void addcard(String btnClass) {
+    private void addcard(String btnClass, String yrlvl) {
 
         View view = getLayoutInflater().inflate(R.layout.list_item, null);
         TextView nameView = view.findViewById(R.id.className);
+        TextView yearLevel = view.findViewById(R.id.yearLevel);
 
         nameView.setText(btnClass);
+        yearLevel.setText(yrlvl);
 
 
         Layout.addView(view);

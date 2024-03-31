@@ -5,20 +5,10 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/btnClass"
+        android:id="@+id/studentName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Add Class"
+        android:hint="Add Student"
         android:fontFamily="casual" />
-
-    <EditText
-        android:id="@+id/yrlvl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:fontFamily="casual"
-        android:hint="Year Level" />
-
 
 </RelativeLayout>

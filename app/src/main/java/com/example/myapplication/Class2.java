@@ -44,8 +44,8 @@ public class Class2 extends AppCompatActivity {
 
     private void buildDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        View view = getLayoutInflater().inflate(R.layout.layout_dialog, null);
-        EditText name = view.findViewById(R.id.btnClass);
+        View view = getLayoutInflater().inflate(R.layout.layout_student, null);
+        EditText name = view.findViewById(R.id.studentName);
 
         builder.setView(view)
                 .setTitle("Student Name")

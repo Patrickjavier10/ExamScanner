@@ -12,7 +12,7 @@
         android:layout_height="35dp"
         android:text="Settings"
         android:textStyle="bold"
-        android:fontFamily="casual"
+        android:fontFamily="@font/roboto"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="casual"
+                android:fontFamily="@font/roboto"
                 android:text="Privacy and Security"
                 android:textSize="20sp" />
 
@@ -91,7 +91,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
-            android:fontFamily="casual"
+            android:fontFamily="@font/roboto"
             android:text="App Information"
 
             android:textSize="20sp" />
@@ -128,7 +128,7 @@
                 android:layout_height="60dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="17dp"
-                android:fontFamily="casual"
+                android:fontFamily="@font/roboto"
                 android:text="Log Out"
                 android:textSize="20sp" />
 

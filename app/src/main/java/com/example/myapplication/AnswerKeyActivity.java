@@ -9,7 +9,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
@@ -28,13 +30,24 @@ public class AnswerKeyActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
 
+    ImageView img;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_answer_key);
 
         tabLayout = findViewById(R.id.tabLayout);
+        img = findViewById(R.id.bckbtn);
 
+        //back button to Home Activity
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AnswerKeyActivity.this, HomeActivity.class));
+                finish();
+            }
+        });
 
 
       tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -43,12 +56,13 @@ public class AnswerKeyActivity extends AppCompatActivity {
               switch (tab.getPosition()){
                   case 0:
                       startActivity(new Intent(AnswerKeyActivity.this, AnswerKeyActivity.class));
+                        finish();
                       break;
 
 
                   case 1:
                       startActivity(new Intent(AnswerKeyActivity.this, Part2.class));
-
+                      finish();
 
               }
           }

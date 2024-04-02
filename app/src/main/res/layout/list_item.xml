@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="BSCS - 601"
                 android:textStyle="bold"
-                android:fontFamily="casual"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:layout_marginLeft="10dp"/>

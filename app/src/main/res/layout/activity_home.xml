@@ -10,8 +10,8 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:fontFamily="casual"
+        android:layout_height="60dp"
+        android:fontFamily="@font/roboto"
         android:text="CheckMate"
         android:textAlignment="center"
         android:textColor="#000080"
@@ -60,7 +60,7 @@
                     android:layout_below="@+id/myclassImage"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="MyClass"
                     android:textSize="20sp" />
 
@@ -99,7 +99,7 @@
                     android:layout_below="@+id/answerKeyImage"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="Answer Key"
                     android:textSize="20sp" />
 
@@ -151,7 +151,7 @@
                     android:layout_below="@+id/myclasssImage"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="Exams"
                     android:textSize="20sp" />
 
@@ -190,7 +190,7 @@
                     android:layout_below="@+id/answerKeyyImage"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="Settings"
                     android:textSize="20sp" />
 
@@ -260,7 +260,7 @@
                     android:layout_below="@+id/myclassImages"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="Analysis"
                     android:textSize="20sp" />
 
@@ -299,7 +299,7 @@
                     android:layout_below="@+id/answerKeyImages"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/roboto"
                     android:text="About"
                     android:textSize="20sp" />
 

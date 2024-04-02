@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
 
      CardView bn;
 
-     CardView cn, cg;
+     CardView cn, cg, au;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,14 @@ public class HomeActivity extends AppCompatActivity {
         bn = findViewById(R.id.figure4);
         cn = findViewById(R.id.figure3);
         cg = findViewById(R.id.figure2);
+        au = findViewById(R.id.figure5);
+
+        au.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, AnalysisActivity.class));
+            }
+        });
 
         cg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, AnswerKeyActivity.class));
             }
         });
+
 
         iv.setOnClickListener(new View.OnClickListener() {
             @Override

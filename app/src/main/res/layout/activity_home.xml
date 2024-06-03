@@ -5,6 +5,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".HomeActivity">
 
     <TextView
@@ -14,17 +15,17 @@
         android:fontFamily="@font/roboto"
         android:text="CheckMate"
         android:textAlignment="center"
-        android:textColor="#000080"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:flow_horizontalAlign="center"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <LinearLayout
         android:id="@+id/row1"
@@ -62,6 +63,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="MyClass"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -101,6 +103,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="Answer Key"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -153,6 +156,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="Exams"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -192,6 +196,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="Settings"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -262,6 +267,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="Analysis"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -301,6 +307,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto"
                     android:text="About"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView

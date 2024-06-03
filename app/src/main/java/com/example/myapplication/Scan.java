@@ -24,6 +24,8 @@ import com.google.android.gms.vision.text.TextRecognizer;
 import java.io.IOException;
 import java.util.Scanner;
 
+
+
 public class Scan extends AppCompatActivity {
 
     private SurfaceView surfaceView;
@@ -110,7 +112,8 @@ public class Scan extends AppCompatActivity {
 
 
 
-            }
+
+        }
 
         }
     }

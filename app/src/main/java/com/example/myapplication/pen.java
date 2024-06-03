@@ -5,9 +5,9 @@ import static com.example.myapplication.R.id.btnClass;
 import static com.example.myapplication.R.id.className;
 import static com.example.myapplication.R.id.container;
 
-
 import static com.example.myapplication.R.id.surfaceView;
 import static com.example.myapplication.R.id.textView;
+import static com.example.myapplication.R.id.yrlvl;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,6 +49,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -70,7 +73,7 @@ import jxl.write.biff.RowsExceededException;
 public class pen extends AppCompatActivity {
 
     ImageView iv;
-    Button button;
+    Button button, button1;
 
 
     LinearLayout Layout;
@@ -78,12 +81,17 @@ public class pen extends AppCompatActivity {
 
     AlertDialog dialog;
 
+
+
     private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pen);
+
+
+
 
 
         Layout = findViewById(R.id.container);
@@ -99,7 +107,6 @@ public class pen extends AppCompatActivity {
         //  iv = findViewById(R.id.scanner);
 
         button = findViewById(R.id.AddClass);
-
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
@@ -141,6 +148,8 @@ public class pen extends AppCompatActivity {
             public void onClick(View v) {
 
                 dialog.show();
+
+
 
             }
         });
@@ -330,6 +339,9 @@ public class pen extends AppCompatActivity {
         EditText name = view.findViewById(R.id.btnClass);
         EditText yearlvl = view.findViewById(R.id.yrlvl);
 
+
+
+
         builder.setView(view)
                 .setTitle("Add Class Name")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -353,6 +365,9 @@ public class pen extends AppCompatActivity {
                 });
 
         dialog = builder.create();
+
+
+
     }
 
 
@@ -369,8 +384,21 @@ public class pen extends AppCompatActivity {
 
         Layout.addView(view);
 
+        view.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+
+                Layout.removeView(view);
+                return true;
+            }
+        });
+
+
+
+
         for (int i = 0; i < Layout.getChildCount(); i++) {
             View childView = Layout.getChildAt(i);
+
 
 
 
@@ -391,16 +419,39 @@ public class pen extends AppCompatActivity {
                     startActivity(new Intent(pen.this, Class3.class));
                 }
             }
+
         });
 
 
 
-        }
+          /*  for (int c = 0; c < Layout.getChildCount(); i++) {
+                View childView2 = Layout.getChildAt(i);
 
 
-        }
+                childView2.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+
+                    int finalC = c;
+                    if (finalC == 0) ;
+                    {
+                        Layout.removeView(view);
+                    }
+                    {
+                        return true;
+                    }
+                }
+            });
+*/
 
 }
+
+        }
+
+
+        }
+
+
 
 
 

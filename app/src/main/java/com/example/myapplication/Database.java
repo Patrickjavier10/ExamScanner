@@ -20,7 +20,13 @@ public class Database extends SQLiteOpenHelper {
         String qry1 = "create table users (username text, email text, password text )";
         sqLiteDatabase.execSQL(qry1);
 
+
+
     }
+
+
+
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -50,4 +56,7 @@ public class Database extends SQLiteOpenHelper {
         return result;
 
     }
-}
+
+
+    }
+

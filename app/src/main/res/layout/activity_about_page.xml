@@ -13,7 +13,7 @@
         android:fontFamily="@font/roboto"
         android:text="CheckMate"
         android:textAlignment="center"
-        android:textColor="#000080"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:flow_horizontalAlign="center"
@@ -44,10 +44,8 @@
             android:fontFamily="@font/roboto"
             android:text="This is an application developed by students of STI College Ortigas-Cainta to satisfy their thesis requirements."
             android:textAlignment="textStart"
-            android:textSize="23sp"
-
-
-            />
+            android:textColor="@color/black"
+            android:textSize="23sp"/>
 
         <TextView
             android:layout_width="215dp"
@@ -57,9 +55,7 @@
             android:text="Thesis Members:"
             android:textAlignment="textStart"
             android:textSize="23sp"
-
-
-            />
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="271dp"
@@ -69,9 +65,7 @@
             android:text="Javier, Patrick R.                           Sibal, Jairo               Vargas, Dayzerlyn Daine          Thiarhia, Ramesh Kumar                  Villanueva, Miguel   "
             android:textAlignment="textStart"
             android:textSize="23sp"
-
-
-            />
+            android:textColor="@color/black"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,7 +74,8 @@
             android:background="@color/light_blue_400"
             android:fontFamily="@font/roboto"
             android:text="Bachelor of Science in Computer Science"
-            android:textSize="23sp" />
+            android:textSize="23sp"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/textView5"

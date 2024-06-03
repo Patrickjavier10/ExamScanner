@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SettingsActivity.this, MainActivity.class));
-                finish();
+
             }
         });
 

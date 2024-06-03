@@ -58,7 +58,7 @@ public class ExamsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(ExamsActivity.this, Scan.class));
+                startActivity(new Intent(ExamsActivity.this, ImageCapture.class));
 
             }
         });

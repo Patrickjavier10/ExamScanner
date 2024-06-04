@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">797290493893</string>
+    <string name="google_api_key" translatable="false">AIzaSyCXIM6Z5-V5xO5U2Kuqtb7DJ4-o7tTrSVo</string>
+    <string name="google_app_id" translatable="false">1:797290493893:android:7d117c0886bdbaeb6a7dac</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCXIM6Z5-V5xO5U2Kuqtb7DJ4-o7tTrSVo</string>
+    <string name="google_storage_bucket" translatable="false">textdetector1213.appspot.com</string>
+    <string name="project_id" translatable="false">textdetector1213</string>
+</resources>

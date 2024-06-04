@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_analysis.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_analysis.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_part2.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_part2.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_class2.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_class2.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_exams.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_exams.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_class1.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_class1.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_home.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_cs602.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_cs602.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_pen.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_pen.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_about_page.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_about_page.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_class3.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_class3.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/list_item.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/list_item.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/layout_dialog.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/layout_dialog.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_class0.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_class0.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_settings.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/layout_student.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/layout_student.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/list_student.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/list_student.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_answer_key.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_answer_key.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_scan.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_main.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_register.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeReleaseResources-45:/layout/activity_cs601.xml",
+        "source": "com.example.myapplication.app-main-47:/layout/activity_cs601.xml"
+    }
+]
